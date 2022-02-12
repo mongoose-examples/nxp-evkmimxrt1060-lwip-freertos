@@ -18,7 +18,7 @@ static void cb(struct mg_connection *c, int ev, void *ev_data, void *fn_data) {
 
 void mg_run_server() {
   mg_mgr_init(&mgr);
-  LOG(LL_INFO, ("Starting Mongoose v%s", MG_VERSION)); // Tell the world
+  MG_INFO( ("Starting Mongoose v%s", MG_VERSION)); // Tell the world
   void *c = mg_http_listen(&mgr, s_listening_address, cb, &mgr); // Web listener
   while (c) {
 	  mg_mgr_poll(&mgr, 100); // Infinite event loop
