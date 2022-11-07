@@ -166,7 +166,7 @@ extern "C" {
 #if MG_ARCH == MG_ARCH_FREERTOS
 
 #include <ctype.h>
-#include <errno.h>
+// #include <errno.h> // Cannot include errno - might conflict with lwip!
 #include <stdarg.h>
 #include <stdbool.h>
 #include <stddef.h>
@@ -181,7 +181,7 @@ extern "C" {
 #define MG_IO_SIZE 512
 #endif
 
-#define calloc(a, b) mg_calloc((a), (b))
+#define calloc(a, b) mg_calloc(a, b)
 #define free(a) vPortFree(a)
 #define malloc(a) pvPortMalloc(a)
 #define strdup(s) ((char *) mg_strdup(mg_str(s)).ptr)
@@ -193,14 +193,11 @@ static inline void *mg_calloc(size_t cnt, size_t size) {
   return p;
 }
 
-#if 0
-//#define mkdir(a, b) (-1)
-#define mkdir(a, b) mg_mkdir((a), (b))
+#define mkdir(a, b) mg_mkdir(a, b)
 static inline int mg_mkdir(const char *path, mode_t mode) {
   (void) path, (void) mode;
   return -1;
 }
-#endif
 
 #endif  // MG_ARCH == MG_ARCH_FREERTOS
 
