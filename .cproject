@@ -105,7 +105,8 @@
 									<listOptionValue builtIn="false" value="SERIAL_PORT_TYPE_UART=1"/>
 									<listOptionValue builtIn="false" value="SDK_OS_FREE_RTOS"/>
 									<listOptionValue builtIn="false" value="MCUXPRESSO_SDK"/>
-									<listOptionValue builtIn="false" value="MG_ARCH=MG_ARCH_FREERTOS_LWIP"/>
+									<listOptionValue builtIn="false" value="MG_ARCH=MG_ARCH_FREERTOS"/>
+									<listOptionValue builtIn="false" value="MG_ENABLE_LWIP=1"/>
 									<listOptionValue builtIn="false" value="CR_INTEGER_PRINTF"/>
 									<listOptionValue builtIn="false" value="PRINTF_FLOAT_ENABLE=0"/>
 									<listOptionValue builtIn="false" value="__MCUXPRESSO"/>
@@ -464,7 +465,8 @@
 									<listOptionValue builtIn="false" value="SERIAL_PORT_TYPE_UART=1"/>
 									<listOptionValue builtIn="false" value="SDK_OS_FREE_RTOS"/>
 									<listOptionValue builtIn="false" value="MCUXPRESSO_SDK"/>
-									<listOptionValue builtIn="false" value="MG_ARCH=MG_ARCH_FREERTOS_LWIP"/>
+									<listOptionValue builtIn="false" value="MG_ARCH=MG_ARCH_FREERTOS"/>
+									<listOptionValue builtIn="false" value="MG_ENABLE_LWIP=1"/>
 									<listOptionValue builtIn="false" value="CR_INTEGER_PRINTF"/>
 									<listOptionValue builtIn="false" value="PRINTF_FLOAT_ENABLE=0"/>
 									<listOptionValue builtIn="false" value="__MCUXPRESSO"/>
